@@ -24,4 +24,10 @@ class Deck:
     def show_cards(self):
         for card in self.cards:
             card.card_info()
+    def random_card(self):
+        self.random.choices.suit
+        self.random.choices.point_val
+        return(f"The {self.point_val} of {self.suit}")
+        print(random_card())
+
 
