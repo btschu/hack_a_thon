@@ -1,6 +1,8 @@
+import random
 from . import card
 
 class Deck:
+
 
     def __init__( self ):
         suits = [ "spades" , "hearts" , "clubs" , "diamonds" ]
@@ -24,10 +26,8 @@ class Deck:
     def show_cards(self):
         for card in self.cards:
             card.card_info()
-    def random_card(self):
-        self.random.choices.suit
-        self.random.choices.point_val
-        return(f"The {self.point_val} of {self.suit}")
-        print(random_card())
 
+    def random_card(self):
+        self.random_card = random.choice(self.cards.card_info)
+        print(self.cards.card_info)
 
